@@ -13,8 +13,8 @@ beforeEach(() => {
 afterEach(() => {
   wrapped.unmount();
 });
-it("has a text area and a button", () => {
-  expect(wrapped.find("button").length).toEqual(1);
+it("has a text area and two buttons", () => {
+  expect(wrapped.find("button").length).toEqual(2);
   expect(wrapped.find("textarea").length).toEqual(1);
 });
 

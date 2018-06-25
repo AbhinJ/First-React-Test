@@ -16,7 +16,9 @@ beforeEach(() => {
     </Root>
   );
 });
-
+afterEach(() => {
+  wrapped.unmount();
+});
 it("creates one Li per comment", () => {
   expect(wrapped.find("li").length).toEqual(2);
 });
